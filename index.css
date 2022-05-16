@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css?family=Big+Shoulders+Text:100,300,400,500,600,700,800,900&display=swap');
+
+/* font-family: 'Big Shoulders Text', cursive; */
+*{
+    scroll-behavior: smooth;
+    font-family: 'Big Shoulders Text', cursive;
+    padding: 0;
+    margin: 0;
+    color: var(--c);
+}
+:root {
+    --a: #ffff;
+    --b: #303133;
+    --c: #ff6e00;
+    --d: #ffd890;
+  }
+
+/* Barre de Naviagation */
+
+.nav-flex-row {
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: absolute;
+    z-index: 100;
+    left: 0;
+    width: 100%;
+}
+
+.nav-flex-row li {
+    text-decoration: none;
+    list-style-type: none;
+    position: relative;
+    padding: 2%;
+}
+
+.nav-flex-row li a {
+    color: var(--b);
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+/* Page d'Acceuil */
+
+.section-intro {
+    height: 820px;
+    /*background-image: url(img/petr-sevcovic-qE1jxYXiwOA-unsplash.jpg);
+    background-size: cover;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sectionintrou {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    right: 10%;
+}
+
+
+.section-intro h1 {
+    background-color: transparent;
+    color: var(--d);
+    font-size: 6em;
+    font-weight: 700;
+}
+.section-intro h2 {
+    color: var(--b);
+    margin-top: -5%;
+}
+
+.section-intro header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* Bouton Reservation */
+.link-to-book-wrapper {
+    margin-top: 5%;
+    flex: 1;
+}
+
+.link-to-book {
+    color: var(--b);
+    display: block;
+    border: 2px solid var(--b);
+    padding: 5px 10px;
+}
+
+a.link-to-book:hover {
+    background-color: var(--b);
+    color: var(--a);
+    text-decoration: none;
+    transition: 0.5s ease;
+}
+/* A propos */
+.about-section {
+    color: var(--c);
+    display: flex;
+    align-items: center;
+    background-color: var(--b);
+    padding: 50px 30px;
+}
+
+.about-section p,
+.about-section h3 {
+    text-align: center;
+    width: 85%;
+    margin: auto;
+    font-size: 1.8em;
+    text-transform: uppercase;
+}
+/* Menu */
+
+.menu img{
+    height: 100%;
+    width: 100%;
+}
+/* Carousel d'images */
+.carousel-inner {
+    height: 700px;
+}
+
+/* Formulaire */
+.pied {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: 2px solid #000;
+    padding-top: 5em ;
+    background-color: var(--b);
+}
+.horaire,.info,.form-class,span,.form p,.form h3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.horaire,.info,.form-class {
+    margin: 0.7em;
+    padding: 1.5em;
+}
+.form-control {
+    margin: 0.2em;
+}
+
+/* Bouton envoi du formulaire */
+.btn.btn-primary {
+    color: var(--b);
+    background-color: var(--a);
+    text-transform: uppercase;
+    font-size: 16px;
+    padding: 2%;
+    letter-spacing: 1.5px;
+    border: 0;
+}
+
+.btn.btn-primary:hover {
+    background-color: var(--c);
+}
+ 
+/* Footer */
+
+
+
+
+
+
+@media (min-width:577px) and (max-width: 800px) {
+
+    .section-intro {
+        height: 500px;
+    }
+
+    .about-section p,
+    .about-section h3 {
+        font-size: 20px;
+    }
+
+    .carousel-inner {
+        height: auto;
+    }
+
+    
+}
+
+@media screen and (max-width: 577px) {
+    .section-intro {
+        height: 300px;
+    }
+
+    .about-section {
+        padding: 30px;
+    }
+
+    .section-intro h1 {
+        font-size: 2em;
+    }
+
+    .about-section p,
+    .about-section h3 {
+        font-size: 15px;
+    }
+
+    .carousel-inner {
+        height: auto;
+    }
+}
